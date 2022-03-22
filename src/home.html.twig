@@ -1,0 +1,38 @@
+<div class="home">
+    <div class="home-jumbo"
+         style="background-image: url('{{ jumbo_image|default(citipo_theme_asset_url('assets/home-default.jpg')) }}');">
+        {% if jumbo_overlay %}
+            <div class="home-jumbo-overlay"></div>
+        {% endif %}
+
+        <div class="home-jumbo-intro-container">
+            <div class="home-jumbo-intro">
+                <div class="home-jumbo-intro-view">
+                    <h2>
+                        {{ jumbo_title|default('Budget participatif de la Ville de Paris') }}
+                    </h2>
+
+                    <div class="home-jumbo-intro-split"></div>
+
+                    <p>
+                        {{ jumbo_content|default('Un quart des investissements de la Ville de Paris est décidé avec les Parisiennes et les Parisiens. Le budget participatif est l’un des outils pour faire le Paris de demain.')|raw }}
+                    </p>
+
+                    {% if blocks[0] is defined and blocks[0].type == 'cta' %}
+                        <div class="home-jumbo-buttons">
+                            {{ blocks[0].content|raw }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-blocks">
+        {% for key, block in blocks %}
+            {% if key != 0 or block.type != 'cta' %}
+                {{ block.content|raw }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

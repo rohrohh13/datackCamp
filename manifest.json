@@ -1,0 +1,45 @@
+{
+    "name": {
+        "en": "Action",
+        "fr": "Action"
+    },
+    "description": {
+        "en": "The main image takes the whole screen and highlights the call to actions. The last menu item is shaped for action.",
+        "fr": "L'image principale prend la totalité de l'écran et met en avant les boutons d'action. Le dernier item du menu est conçu pour l'action."
+    },
+    "defaultColors": {
+        "primary": "3A4F74",
+        "secondary": "82c383",
+        "third": "3A4F74"
+    },
+    "defaultFonts": {
+        "title": "Asap Condensed",
+        "text": "Open Sans"
+    },
+    "thumbnail": "thumbnail.jpg",
+    "templates": {
+        "style": "src/style.css.twig",
+        "script": "src/script.js.twig",
+        "head": "src/head.html.twig",
+        "layout": "src/layout.html.twig",
+        "header": "src/header.html.twig",
+        "footer": "src/footer.html.twig",
+        "list": "src/list.html.twig",
+        "content": "src/content.html.twig",
+        "home": "src/home.html.twig",
+        "home-calls-to-action": "src/home/calls-to-action.html.twig",
+        "home-custom-content": "src/home/custom-content.html.twig",
+        "home-newsletter": "src/home/newsletter.html.twig",
+        "home-posts": "src/home/posts.html.twig",
+        "home-socials": "src/home/socials.html.twig",
+        "manifesto-list": "src/manifesto/list.html.twig",
+        "manifesto-view": "src/manifesto/view.html.twig",
+        "trombinoscope-list": "src/trombinoscope/list.html.twig",
+        "trombinoscope-view": "src/trombinoscope/view.html.twig"
+    },
+    "assets": [
+        "assets/bg-menu.svg",
+        "assets/bg-posts.png",
+        "assets/home-default.jpg"
+    ]
+}
