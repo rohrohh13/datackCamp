@@ -1,3 +1,7 @@
+{% if '/campaigning/' in url %}
+
+
+{% else %}
 <div class="content">
     <div class="content-splash">
         {% if previewing_text|default(null) %}
@@ -115,3 +119,4 @@
         </div>
     {% endif %}
 </div>
+{% endif %}
